@@ -30,6 +30,12 @@
       <span class="has-error" th:if="${#fields.hasErrors('passwordConfirm')}" th:errors="*{passwordConfirm}"></span>
     </div>
 
+    <div class="form-group">
+      <input type="text" th:field="*{userlocation}" class="form-control"
+             placeholder="Your location">
+      <span class="has-error" th:if="${#fields.hasErrors('userlocation')}" th:errors="*{userlocation}"></span>
+    </div>
+
     <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
   </form>
 
